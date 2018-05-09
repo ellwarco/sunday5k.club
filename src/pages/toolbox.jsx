@@ -6,9 +6,9 @@ import ToolBoxListContainer from '../containers/ToolBoxListContainer';
 
 export default () => (
   <div className="c-content-box">
-    <Helmet title="That's my front-end developer toolbox" />  
+    <Helmet title="That's my running toolbox" />  
 
-    <HeadlineWithFocus><span>These are pieces of </span>my toolbox</HeadlineWithFocus>
+    <HeadlineWithFocus><span>These are pieces of </span>my RunBox</HeadlineWithFocus>
     <ToolBoxListContainer />
    
   </div>

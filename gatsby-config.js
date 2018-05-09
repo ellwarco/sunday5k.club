@@ -1,11 +1,11 @@
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  // siteMetadata: {
-  //   title: `GatsbyJS`,
-  //   description: `A fantastic new static site generator.`,
-  //   siteUrl: `https://www.gatsbyjs.org`
-  // },  
+  siteMetadata: {
+  title: `Sunday5K club`,
+  description: `Every day is a good day when you run`,
+  siteUrl: `https://www.sunday5k.club`
+  },  
   plugins: [
     {
       resolve: `gatsby-plugin-postcss-sass`,

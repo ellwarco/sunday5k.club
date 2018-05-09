@@ -2,19 +2,13 @@
 
 That's the code of my website (sunday5k.club). My first production-use of the Gatsby-React tandem.
 
-
-
 ## Screenshots
 ![](static/assets/readme-screens.png)
-
-
 
 ### Build with
 
 * [Gatsby](https://github.com/gatsbyjs/gatsby)
 * [React](https://github.com/facebook/react)
-
-
 
 ### Starting point
 

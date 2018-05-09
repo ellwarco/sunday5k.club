@@ -1,0 +1,134 @@
+@import "compass/css3";
+
+$hex-radius:.5em;
+.hex {
+    overflow: hidden;
+    display: inline-block;
+    margin: 2em 0;
+    width: 12em;
+    height: 10.32em;
+    @include transform(rotate(-30deg) skewX(30deg));
+    @include border-radius($hex-radius);
+}
+.hex *, .hex *:before {
+    display: block;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    @include border-radius($hex-radius);
+}
+
+.hex-item-inner {
+    cursor: pointer;
+    @include transform(skewX(-30deg) rotate(60deg) skewX(30deg));
+}
+.hex-item-inner-2 {
+    content: '';
+    @include transform(skewX(-30deg) rotate(60deg) skewX(30deg));
+}
+.hex-item-inner-2{
+    &:before {
+        margin-top: -4.5em;
+        height: 20em;
+        line-height: 20em;
+        text-align: center;
+        content: '';
+        background-position: center;
+        background: #ccc;
+        @include transform(skewX(-30deg) rotate(-90deg));
+    }
+}
+
+$leftMargin : 85px;
+$topMargin : -42px;
+
+.hex:nth-child(3n) {
+    margin-left: 0px;
+}
+
+.hex:nth-child(2n) {
+    margin-left: $leftMargin;
+}
+
+.hex:nth-child(n+2) {
+    margin-top: $topMargin;
+}
+.work{
+    margin-left: 60px;
+}
+
+@media (min-width: 516px) {
+
+    .hex:nth-child(2n) {
+        margin-left: 0px;
+    }
+
+    .hex:nth-child(n+2) {
+        margin-top: 0px;
+    }
+    .hex:nth-child(5n-1) {
+        margin-left: 0px;
+    }
+
+    .hex:nth-child(4n-1) {
+        margin-left: $leftMargin;
+    }
+
+    .hex:nth-child(n+3) {
+        margin-top: $topMargin;
+    }
+
+}
+
+@media (min-width: 628px) {
+    .work{
+        margin-left: auto;
+    }
+    .hex:nth-child(4n-1) {
+        margin-left: 0px;
+    }
+
+    .hex:nth-child(n+3) {
+        margin-top: 0px;
+    }
+
+    .hex:nth-child(6n-2) {
+        margin-left: $leftMargin;
+    }
+
+    .hex:nth-child(n+4) {
+        margin-top: $topMargin;
+    }
+
+    .hex:nth-child(7n-2) {
+        margin-left: 0px;
+    }
+
+}
+@media (min-width: 820px) {
+
+    .hex:nth-child(6n-2) {
+        margin-left: 0px;
+    }
+
+    .hex:nth-child(n+4) {
+        margin-top: 0px;
+    }
+
+    .hex:nth-child(7n-2) {
+        margin-left: $leftMargin;
+    }
+
+    .hex:nth-child(n+5) {
+        margin-top: $topMargin;
+    }
+    .container {
+      max-width: 730px;
+    }
+}
+.hex-item-inner-2::before{
+      background-image:url("https://s7.postimg.org/tw8oknni3/rick.jpg") ;
+    background-repeat: no-repeat;
+    background-position: 56%;
+    background-size: 120%;
+}

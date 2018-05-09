@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Helmet from 'react-helmet';
-
 import '../scss/main.scss';
 require("typeface-exo");
 require("typeface-roboto");
@@ -19,7 +18,7 @@ class DefaultLayout extends React.Component {
     return (
       <div className="l-page-wrapper">
         <Helmet
-          title="Sunday5k Running Club"
+          title="Sunday5k Running"
           meta={[{ 
             name: 'description', 
             content: `Sunday5k - new challenge every Sunday!` 
