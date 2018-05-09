@@ -6,16 +6,7 @@ import { FaAngellist, FaWrench } from 'react-icons/lib/fa';
 const ForHomePageContent = (
   <div className="c-remark-screen__message">
     <p>
-      <b>I'm glad</b><br /> that you're interested in my stuff.
-    </p>
-    <p>
-      There's something I want you to remember while you're going over the website.
-    </p>
-    <p>
-      At present, I'm open to <b>full time on-site job</b> offers (Warsaw or London).
-    </p>
-    <p>
-      If you realize that I would be a good fit, drop me 
+      Drop me 
       a message at <b><Obfuscate email='sunday5k@gmail.com' /></b>.
     </p>
     <p>
@@ -30,7 +21,7 @@ const ForContactPageContent = (
       <b>Hi there</b><br /> Before you leave
     </p>
     <p>
-      I want you to remember that at present, I am open to <b>full time on-site job</b> offers (Warsaw or London).
+      I want you to remember that at present, I am open to <b>full time on-site job</b> offers.
     </p>
     <p>
       If you feel that you want me on your team, drop me 
@@ -41,15 +32,15 @@ const ForContactPageContent = (
     </p>
     <p>
       Thank you<br />
-      <b>Greg</b>
+      <b>Sergey</b>
     </p>
   </div>
 );
 
 const RemarkScreen = (props) => { 
   const links = [ 
-    { path: 'toolbox', icon: FaWrench }, 
-    //{ path: 'playground', icon: FaPaperPlaneO }
+    { path: 'scoreboard', icon: FaAngellist }, 
+    //{ path: 'scoreboard', icon: FaPaperPlaneO }
   ];
 
   return (

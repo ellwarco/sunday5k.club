@@ -25,7 +25,7 @@ class MainNav extends React.Component {
     this.state = {
       links: [
         { to: '/', text: 'Home', icon: FaMapMarker },
-        { to: '/playground/', text: 'Score Board', icon: FaAngellist },
+        { to: '/scoreboard/', text: 'Score Board', icon: FaAngellist },
         { to: '/contact/', text: 'Contact', icon: FaEnvelopeO }
       ],
       mainNavModifierClassName: '',

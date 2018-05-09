@@ -47,6 +47,7 @@ export default props => {
       >
         Do not forget
       </h2>
+
     </div>
   );
 };
