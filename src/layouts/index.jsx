@@ -34,7 +34,7 @@ class DefaultLayout extends React.Component {
 
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
+
       <div className="l-page-wrapper">
         <Helmet
           title="Sunday5k Running"
@@ -43,7 +43,6 @@ class DefaultLayout extends React.Component {
             content: `Sunday5k - new challenge every Sunday!` 
           }]}
         />    
-          
         <div className={`l-page-container ${this.props.remarkScreenisActive && 'is-blurred'}`}>
           <MainHeader />
           <main className="l-main">
@@ -63,7 +62,6 @@ class DefaultLayout extends React.Component {
           locationPathName={this.props.location.pathname}
         />
       </div>
-</MuiThemeProvider>
     )
   }  
 }
