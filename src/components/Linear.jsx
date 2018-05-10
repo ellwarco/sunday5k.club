@@ -13,8 +13,6 @@ function LinearIndeterminate(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <LinearProgress />
-      <br />
       <LinearProgress color="secondary" />
     </div>
   );

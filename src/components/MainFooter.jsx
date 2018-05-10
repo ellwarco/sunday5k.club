@@ -1,21 +1,11 @@
 import React from "react";
 import Link from "gatsby-link";
+import FaHeart from 'react-icons/lib/fa/heart';
 
 const MainFooter = () => (
   <div className="c-main-footer">
     <p className="c-main-footer__note">
-      Build with{" "}
-      <a
-        href="https://www.gatsbyjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gatsby
-      </a>{" "}
-      and{" "}
-      <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-        React
-      </a>
+    Made with {' '}<FaHeart />{' '} {' '} © {2018} 
     </p>
   </div>
 );
