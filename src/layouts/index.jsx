@@ -34,13 +34,13 @@ class DefaultLayout extends React.Component {
 
   render() {
     return (
-
+      <MuiThemeProvider theme={theme}>
       <div className="l-page-wrapper">
         <Helmet
-          title="Sunday5k Running"
+          title="Sunday5k - new challenge every Sunday!"
           meta={[{ 
-            name: 'description', 
-            content: `Sunday5k - new challenge every Sunday!` 
+            name: 'Sunday5k - new challenge every Sunday!', 
+            content: `Come and join us at the Sunday5k for our weekly Running Club. It's free!` 
           }]}
         />    
         <div className={`l-page-container ${this.props.remarkScreenisActive && 'is-blurred'}`}>
@@ -62,6 +62,7 @@ class DefaultLayout extends React.Component {
           locationPathName={this.props.location.pathname}
         />
       </div>
+    </MuiThemeProvider>
     )
   }  
 }
@@ -73,6 +74,5 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
   return { };
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(DefaultLayout);
 
