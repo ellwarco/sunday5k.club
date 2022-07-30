@@ -38,5 +38,6 @@ That's the code of my website (sunday5k.club). My first production-use of the Ga
 3. Install dependencies (yarn install)
 4. Use gatsby-cli to start in development mode ([docs](https://www.gatsbyjs.org/docs/))
 5. Have fun.
+6. ok
 
 
